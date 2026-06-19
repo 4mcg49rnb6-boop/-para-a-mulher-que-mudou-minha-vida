@@ -4,19 +4,207 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Para a mulher que mudou minha vida ❤️</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+font-family:Georgia,serif;
+}
+
+.hero{
+height:100vh;
+background:url('capa.jpeg') center center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+background:rgba(0,0,0,.6);
+padding:40px;
+border-radius:20px;
+text-align:center;
+max-width:700px;
+}
+
+.overlay h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+button{
+padding:15px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
+
+.carta{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+.foto{
+text-align:center;
+margin:50px 0;
+}
+
+.foto img{
+width:100%;
+max-width:500px;
+border-radius:20px;
+}
+
+.texto{
+font-size:20px;
+line-height:1.8;
+}
+
+.texto p{
+margin-bottom:20px;
+}
+
+.final{
+text-align:center;
+margin-top:40px;
+}
+</style>
+
 </head>
 <body>
+
 <section class="hero">
 <div class="overlay">
 <h1>Para a mulher que mudou minha vida ❤️</h1>
-<p>Algumas pessoas entram na nossa vida e mudam tudo. Você mudou a minha.</p>
-<button onclick="abrirCarta()">Abrir Carta ❤️</button>
+
+<p>
+Algumas pessoas entram na nossa vida e mudam tudo.
+Você mudou a minha.
+</p>
+
+<button onclick="document.getElementById('carta').scrollIntoView({behavior:'smooth'})">
+Abrir Carta ❤️
+</button>
+
 </div>
 </section>
+
 <section id="carta" class="carta">
-<p>Troque foto1.jpg, foto2.jpg, foto3.jpg e foto4.jpg pelas fotos de vocês.</p>
+
+<div class="foto">
+<img src="capa.jpeg">
+</div>
+
+<div class="texto">
+
+<p>Oi, meu amor. Minha loirinha linda ❤️</p>
+
+<p>
+Quero te agradecer por tudo. Por todos os nossos momentos,
+por cada memória, por cada risada e por cada segundo que passamos juntos.
+</p>
+
+<p>
+Você apareceu na minha vida do nada.
+Não foi algo planejado, simplesmente aconteceu.
+E hoje eu não consigo imaginar minha vida sem você nela.
+</p>
+
+<p>
+Eu te amo.
+</p>
+
+</div>
+
+<div class="foto">
+<img src="shopping.jpeg">
+</div>
+
+<div class="texto">
+
+<p>
+Sei que, no começo, você me via como uma criancinha que jamais levaria para frente.
+E olha só o que nós nos tornamos.
+</p>
+
+<p>
+Hoje você faz parte de mim.
+</p>
+
+<p>
+Sou muito grato por ter você na minha vida.
+</p>
+
+</div>
+
+<div class="foto">
+<img src="restaurante.jpeg">
+</div>
+
+<div class="texto">
+
+<p>
+Eu imagino a gente contando nossas histórias para os nossos filhos
+e rindo de tudo o que já vivemos.
+</p>
+
+<p>
+Porque histórias não faltam.
+</p>
+
+<p>
+Com você até os momentos mais simples se tornam especiais.
+</p>
+
+<p>
+Desde a cadeira do CT até a nossa última melhor memória.
+Que, na verdade, vai ser sempre a próxima.
+</p>
+
+</div>
+
+<div class="foto">
+<img src="espelho.jpeg">
+</div>
+
+<div class="texto final">
+
+<p>
+Fiz essa cartinha simplesmente porque senti vontade.
+Porque queria que você soubesse o quanto você é especial para mim.
+</p>
+
+<p>
+Eu te escolho todos os dias.
+</p>
+
+<p>
+E vou continuar te escolhendo amanhã,
+na semana que vem,
+no próximo ano,
+e, se eu puder,
+pelo resto da minha vida.
+</p>
+
+<p>
+Eu te amo, meu amor ❤️
+</p>
+
+<h2>Boredo ❤️</h2>
+
+</div>
+
 </section>
-<script src="script.js"></script>
+
 </body>
 </html>
