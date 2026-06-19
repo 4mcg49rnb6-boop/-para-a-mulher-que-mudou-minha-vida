@@ -12,31 +12,42 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:#0f0f0f;
 color:white;
-font-family:Georgia,serif;
+font-family:Georgia, serif;
 }
 
 .hero{
 height:100vh;
-background:url('capa.jpeg') center center/cover;
+background:url('IMG_1226.jpeg') center center/cover;
 display:flex;
 justify-content:center;
 align-items:center;
 }
 
 .overlay{
-background:rgba(0,0,0,.6);
+background:rgba(0,0,0,.7);
 padding:40px;
 border-radius:20px;
 text-align:center;
 max-width:700px;
+margin:20px;
 }
 
 .overlay h1{
-font-size:3rem;
+font-size:2.8rem;
 margin-bottom:20px;
+}
+
+.overlay p{
+font-size:1.1rem;
+margin-bottom:20px;
+line-height:1.6;
 }
 
 button{
@@ -45,7 +56,6 @@ border:none;
 border-radius:30px;
 font-size:18px;
 cursor:pointer;
-margin-top:20px;
 }
 
 .carta{
@@ -56,35 +66,47 @@ padding:60px 20px;
 
 .foto{
 text-align:center;
-margin:50px 0;
+margin:60px 0;
 }
 
 .foto img{
 width:100%;
 max-width:500px;
 border-radius:20px;
+box-shadow:0 0 20px rgba(255,255,255,.15);
 }
 
 .texto{
 font-size:20px;
-line-height:1.8;
+line-height:1.9;
 }
 
 .texto p{
-margin-bottom:20px;
+margin-bottom:22px;
 }
 
 .final{
 text-align:center;
-margin-top:40px;
+}
+
+.musica{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:25px;
+font-weight:bold;
 }
 </style>
-
 </head>
+
 <body>
 
 <section class="hero">
 <div class="overlay">
+
 <h1>Para a mulher que mudou minha vida ❤️</h1>
 
 <p>
@@ -92,7 +114,7 @@ Algumas pessoas entram na nossa vida e mudam tudo.
 Você mudou a minha.
 </p>
 
-<button onclick="document.getElementById('carta').scrollIntoView({behavior:'smooth'})">
+<button onclick="document.getElementById('carta').scrollIntoView()">
 Abrir Carta ❤️
 </button>
 
@@ -102,7 +124,7 @@ Abrir Carta ❤️
 <section id="carta" class="carta">
 
 <div class="foto">
-<img src="capa.jpeg">
+<img src="IMG_1226.jpeg">
 </div>
 
 <div class="texto">
@@ -110,14 +132,11 @@ Abrir Carta ❤️
 <p>Oi, meu amor. Minha loirinha linda ❤️</p>
 
 <p>
-Quero te agradecer por tudo. Por todos os nossos momentos,
-por cada memória, por cada risada e por cada segundo que passamos juntos.
+Quero te agradecer por tudo. Por todos os nossos momentos, por cada memória, por cada risada e por cada segundo que passamos juntos.
 </p>
 
 <p>
-Você apareceu na minha vida do nada.
-Não foi algo planejado, simplesmente aconteceu.
-E hoje eu não consigo imaginar minha vida sem você nela.
+Você apareceu na minha vida do nada. Não foi algo planejado, simplesmente aconteceu. E hoje eu não consigo imaginar minha vida sem você nela.
 </p>
 
 <p>
@@ -127,13 +146,16 @@ Eu te amo.
 </div>
 
 <div class="foto">
-<img src="shopping.jpeg">
+<img src="599c83dc-4e65-4a0d-80da-cc6b7a7b753e.jpeg">
 </div>
 
 <div class="texto">
 
 <p>
 Sei que, no começo, você me via como uma criancinha que jamais levaria para frente.
+</p>
+
+<p>
 E olha só o que nós nos tornamos.
 </p>
 
@@ -143,19 +165,19 @@ Hoje você faz parte de mim.
 
 <p>
 Sou muito grato por ter você na minha vida.
+Você é uma garota incrível, uma mulher incrível.
 </p>
 
 </div>
 
 <div class="foto">
-<img src="restaurante.jpeg">
+<img src="619472f7-f7bb-4993-9108-df4fee856fbd.jpeg">
 </div>
 
 <div class="texto">
 
 <p>
-Eu imagino a gente contando nossas histórias para os nossos filhos
-e rindo de tudo o que já vivemos.
+Eu imagino a gente contando nossas histórias para os nossos filhos e rindo de tudo o que já vivemos.
 </p>
 
 <p>
@@ -168,13 +190,16 @@ Com você até os momentos mais simples se tornam especiais.
 
 <p>
 Desde a cadeira do CT até a nossa última melhor memória.
+</p>
+
+<p>
 Que, na verdade, vai ser sempre a próxima.
 </p>
 
 </div>
 
 <div class="foto">
-<img src="espelho.jpeg">
+<img src="7afc2d37-1db1-4210-96f5-1e1182c10fec.jpeg">
 </div>
 
 <div class="texto final">
@@ -189,18 +214,23 @@ Eu te escolho todos os dias.
 </p>
 
 <p>
-E vou continuar te escolhendo amanhã,
-na semana que vem,
-no próximo ano,
-e, se eu puder,
-pelo resto da minha vida.
+E vou continuar te escolhendo amanhã.
+Na semana que vem.
+No próximo ano.
+E, se eu puder, pelo resto da minha vida.
 </p>
 
 <p>
 Eu te amo, meu amor ❤️
 </p>
 
-<h2>Boredo ❤️</h2>
+<a class="musica"
+href="https://www.youtube.com/results?search_query=um+amor+puro+djavan"
+target="_blank">
+🎵 Nossa Música
+</a>
+
+<h2 style="margin-top:30px;">Boredo ❤️</h2>
 
 </div>
 
