@@ -1,0 +1,1 @@
+function abrirCarta(){document.getElementById('carta').scrollIntoView({behavior:'smooth'});}
